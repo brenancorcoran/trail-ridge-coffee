@@ -2,6 +2,9 @@
   background: #e0d8ba;
   font-family: 'Roboto', sans-serif;
 }
+.main-footer .footer-elements {
+  width: 182px;
+}
 .main-footer ul li {
   list-style-type: none;
   font-weight: 600;
@@ -9,7 +12,27 @@
 }
 .main-footer a {
   color: #000;
+  text-decoration: none;
 }
-.social div {
+.main-footer a:hover {
+  color: #000;
+  transition: text-decoration 1000ms;
+  text-decoration: underline;
+  transition: text-shadow 500ms;
+  text-shadow: 2px 2px 7px #32695c;
+}
+.social {
+  text-align: center;
+}
+.social .social-icon {
   display: inline-block;
+  padding-bottom: 20px;
+}
+.main-footer .social .social-icon {
+  margin-right: 20px;
+}
+.main-footer .social .social-icon.twitter {
+  display: inline-block;
+  position: relative;
+  top: -3px;
 }
