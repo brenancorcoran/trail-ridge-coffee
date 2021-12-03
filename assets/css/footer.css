@@ -1,3 +1,15 @@
 .main-footer {
   background: #e0d8ba;
+  font-family: 'Roboto', sans-serif;
+}
+.main-footer ul li {
+  list-style-type: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.main-footer a {
+  color: #000;
+}
+.social div {
+  display: inline-block;
 }
