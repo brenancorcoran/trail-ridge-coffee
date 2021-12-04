@@ -19,7 +19,7 @@
   transition: text-decoration 1000ms;
   text-decoration: underline;
   transition: text-shadow 500ms;
-  text-shadow: 2px 2px 7px #32695c;
+  text-shadow: 2px 2px 12px #3d464f;
 }
 .social {
   text-align: center;
@@ -27,6 +27,11 @@
 .social .social-icon {
   display: inline-block;
   padding-bottom: 20px;
+}
+svg:hover {
+  transition: filter 500ms;
+  -webkit-filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
 }
 .main-footer .social .social-icon {
   margin-right: 20px;
