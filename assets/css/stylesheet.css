@@ -6,8 +6,10 @@ main {
 
 .products {
   width: 325px;
-  text-align: center;
   border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
 
 .coffee-bag-1 {
@@ -30,28 +32,18 @@ h2 {
   padding-bottom: 10px;
 }
 
-.buy-now-btn {
-  background-color: #32695c;
-  border: none;
+.buy-now {
   color: white;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: center;
-  margin-bottom: 25px;
-}
-
-
-.buy-now-btn:hover {
-  color: #32695c;
-  background-color: #ffffff;
-  border: 2px solid #32695c;
-  padding-bottom: 8px;
-  padding-top: 9px;
+  text-decoration: none;
 }
 
 #arrow {
@@ -62,3 +54,32 @@ h2 {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+ .buy-now-btn {
+  margin-bottom: 25px;
+  background-color: #32695c;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .buy-now-btn:hover {
+  color: white;
+  background-color: #ffffff;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 9px;
+  text-decoration: none;
+ }
+
+ .buy-now-btn:hover .buy-now {
+   color: #32695c;
+ }
+
+ .buy-now-btn:hover #arrow {
+    border: solid #32695c;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 4.5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+ }
