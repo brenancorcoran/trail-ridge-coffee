@@ -1,4 +1,4 @@
-main {
+.product-home {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
@@ -18,14 +18,14 @@ main {
   max-width: 30%;
 }
 
-h1 {
+.product-home h1 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-h2 {
+.product-home h2 {
   font-family: Roboto;
   font-weight: normal;
   font-size: 12px;
