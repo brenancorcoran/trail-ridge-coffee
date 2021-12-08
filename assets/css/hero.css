@@ -6,8 +6,7 @@ body {
   font-family: 'Archivo', sans-serif;
   border-top: solid #32695c 4px;
   border-bottom: solid #32695c 4px;
-  background-image: url("/assets/img/desktop-hero-texture.gif");
-
+  background-image: url('/assets/img/desktop-hero-texture.gif');
 }
 .grid-container {
   display: grid;
@@ -18,7 +17,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 30px;
-
 }
 .hero img {
   width: 100%;
@@ -44,18 +42,18 @@ body {
 
 @media (min-width: 992px) {
   .main {
-    background-image: url("/assets/img/desktop-hero-texture.gif");
+    background-image: url('/assets/img/desktop-hero-texture.gif');
   }
-  .main-bg  {
-    background-image: url("/assets/img/tr-logo-circle-400px-rotate.png");
+  .main-bg {
+    background-image: url('/assets/img/tr-logo-circle-400px-rotate.png');
     background-repeat: no-repeat;
     background-position: top -60px right;
     height: 350px;
-    opacity: .3;
+    opacity: 0.3;
     background-size: 400px;
   }
   .grid-container {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
     gap: 100px;
   }
   .hero {
@@ -68,13 +66,13 @@ body {
     max-width: 600px;
   }
   .hero h1 {
-  font-size: 2.5em;
-  text-align: left;
-}
-.hero p {
-  font-size: 1.4em;
-  font-weight: 400;
-}
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
   .hero-mbl {
     display: none;
   }
