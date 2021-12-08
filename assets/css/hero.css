@@ -1,28 +1,38 @@
-.hero-section {
-  margin-inline-start: 100px;
-  margin-inline-end: 100px;
-  max-width: 1200px;
-  margin: auto;
+body {
+  margin: 0;
+}
+.main {
   margin-bottom: 20px;
+  font-family: 'Archivo', sans-serif;
+  border-top: solid #32695c 4px;
+  border-bottom: solid #32695c 4px;
+
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
-/* .grid-container > div {
-  border: solid red 2px;
-} */
-.logo img {
-  width: 90%;
-}
-.logo {
-  border: solid 1px #000;
-}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
 
-.hero-img {
-  height: 400px;
-  background-size: cover;
-  margin-bottom: 20px;
+}
+.hero img {
+  width: 100%;
+  border: solid #32695c 8px;
+  filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.9));
+}
+.hero h1 {
+  font-size: 1.5em;
+  white-space: pre-line;
+  text-align: center;
+  color: #000;
+  font-weight: 800;
+}
+.welcome {
+  max-width: 500px;
 }
 .hero-desk {
   display: none;
@@ -32,9 +42,38 @@
 }
 
 @media (min-width: 992px) {
-  .hero-img {
-    height: 200px;
+  .main {
+    background-image: url("/assets/img/desktop-hero-texture.gif");
   }
+  .main-bg  {
+    background-image: url("/assets/img/tr-logo-circle-400px-rotate.png");
+    background-repeat: no-repeat;
+    background-position: top -60px right;
+    height: 350px;
+    opacity: .3;
+    background-size: 400px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr
+    gap: 100px;
+  }
+  .hero {
+    grid-template-columns: 2fr 2fr;
+    gap: 40px;
+    margin-top: -300px;
+  }
+  .welcome {
+    margin-top: 125px;
+    max-width: 600px;
+  }
+  .hero h1 {
+  font-size: 2.5em;
+  text-align: left;
+}
+.hero p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
   .hero-mbl {
     display: none;
   }
