@@ -25,14 +25,13 @@ h1 {
 h2 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
   text-transform: uppercase;
   color: black;
   margin-top: 20px;
-  margin-bottom: -15%;
 }
 
 h3 {
@@ -41,18 +40,10 @@ h3 {
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: -5px;
+  margin-top: -5%;
+  margin-bottom: -5%;
 }
 
-p {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-}
 /* Sign Up Button */
 .sign-up-btn {
   margin-bottom: 25px;
