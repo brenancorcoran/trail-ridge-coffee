@@ -1,4 +1,4 @@
-main {
+.newsletter-main {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
@@ -11,7 +11,7 @@ main {
   grid-template-columns: 1fr;
 }
 
-h1 {
+.newsletter-main h1 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
@@ -22,7 +22,7 @@ h1 {
   color: #32695c;
 }
 
-h2 {
+.newsletter-main h2 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
@@ -34,7 +34,7 @@ h2 {
   margin-top: 20px;
 }
 
-h3 {
+.newsletter-main h3 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 48px;
