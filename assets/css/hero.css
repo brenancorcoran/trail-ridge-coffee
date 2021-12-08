@@ -6,6 +6,7 @@ body {
   font-family: 'Archivo', sans-serif;
   border-top: solid #32695c 4px;
   border-bottom: solid #32695c 4px;
+  background-image: url("/assets/img/desktop-hero-texture.gif");
 
 }
 .grid-container {
