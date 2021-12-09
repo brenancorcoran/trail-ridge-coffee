@@ -1,0 +1,92 @@
+.product-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.products {
+  width: 325px;
+  border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.coffee-bag-1 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  max-width: 30%;
+}
+
+.product-home h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.product-home h2 {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+  margin-bottom: 25px;
+  background-color: #32695c;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Text for buy-now-btn */
+.buy-now {
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Arrow for buy-now-btn */
+#arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Hover animation for buy-now-btn */
+.buy-now-btn:hover {
+  color: white;
+  background-color: #ffffff;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 9px;
+  text-decoration: none;
+}
+
+/* Change color of text for buy-now-btn when hover */
+.buy-now-btn:hover .buy-now {
+  color: #32695c;
+}
+
+/* Change color of arrow for buy-now-btn when hover */
+.buy-now-btn:hover #arrow {
+  border: solid #32695c;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
