@@ -31,7 +31,7 @@ body {
   font-weight: 800;
 }
 .welcome {
-  max-width: 500px;
+  margin-top: 30px;
 }
 .hero-desk {
   display: none;
