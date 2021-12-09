@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+.main {
+  margin-bottom: 20px;
+  font-family: 'Archivo', sans-serif;
+  border-top: solid #32695c 4px;
+  border-bottom: solid #32695c 4px;
+  background-image: url('/assets/img/desktop-hero-texture.gif');
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  font-size: 20px;
+}
+.hero img {
+  width: 100%;
+  border: solid #32695c 8px;
+  filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.9));
+}
+.hero h1 {
+  font-size: 1.5em;
+  white-space: pre-line;
+  text-align: center;
+  color: #000;
+  font-weight: 800;
+}
+.hero p {
+  padding: 0 70px;
+}
+.welcome {
+  margin-top: 30px;
+}
+.hero-desk {
+  display: none;
+}
+.hero-mbl {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .main {
+    background-image: url('/assets/img/desktop-hero-texture.gif');
+  }
+  .main-bg {
+    background-image: url('/assets/img/tr-logo-circle-400px-rotate.png');
+    background-repeat: no-repeat;
+    background-position: top -60px right;
+    height: 350px;
+    opacity: 0.3;
+    background-size: 400px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+  .hero {
+    grid-template-columns: 2fr 2fr;
+    gap: 40px;
+    margin-top: -300px;
+  }
+  .welcome {
+    margin-top: 125px;
+    max-width: 600px;
+  }
+  .hero h1 {
+    font-size: 2em;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+  .hero-mbl {
+    display: none;
+  }
+  .hero-desk {
+    display: block;
+  }
+}
