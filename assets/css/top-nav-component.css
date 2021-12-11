@@ -49,6 +49,7 @@ body {
 
 #links a:hover {
   color: #32695c;
+  text-decoration: underline;
 }
 
 /* =======================
