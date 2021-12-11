@@ -1,56 +1,103 @@
-about-us-main{
-    border-style: solid;
-    border-width: 5px;
-    border-color: #32695c;
-    width: 81%;
-    margin-left: 9.5%;
-    margin-right: 9.5%;
-    margin-top: 107px;
-    margin-bottom: 107px;
-    display: grid;
-    height: 100%;
+.about-us-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
+
+.about-us {
+  width: 325px;
+  border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-bottom: 5%;
+  margin-top: 75px;
+}
+
 .about-us-header {
   font-family: Roboto;
   font-weight: bold;
-  color:black;
-  width: 258px;
-  font-size: 36px;
+  color: black;
+  font-size: 18px;
   text-align: center;
-  margin-top: 54px;
-  margin-left: calc(-129px + 50%);
-}
-.about-us-text{
- font-family: Roboto;
- color:black;
- font-size: 20px;
- text-align: center;
- margin-left: 25%;
- margin-right: 25%;
- margin-top: 56px;
+  margin-top: 30px;
 }
 
-.taste-the-diff-btn{
+.about-us-text {
   font-family: Roboto;
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  color: black;
+  font-size: 12px;
   text-align: center;
-  font-size: 24px;
+  width: 265px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* Taste the diff Button */
+.taste-diff-btn {
   margin-bottom: 25px;
   background-color: #32695c;
-  width: 376px;
+  width: 230px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 60px;
-  margin-left: calc(-189px + 50%);
-  margin-right: 25%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5%;
 }
-.taste-the-diff-btn-arrow{
-    margin-left: 5px;
-    padding-top: 5px;
+
+/*Text for taste-diff-btn */
+.taste-diff {
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6%;
+  padding-right: 5%;
+  text-align: center;
+  text-decoration: none;
 }
-.about-us-trail-ridge-logo{
-    Width:261px;
-    Height:261px;
-    margin-left:calc(-130.5px + 50%);
+
+/* Arrow for taste-diff-btn */
+#arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Hover animation for taste-diff-btn */
+.taste-diff-btn:hover {
+  color: white;
+  background-color: #ffffff;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 9px;
+  text-decoration: none;
+}
+
+/* Change color of text for taste-diff-btn when hover */
+.taste-diff-btn:hover .taste-diff {
+  color: #32695c;
+}
+
+/* Change color of arrow for taste-diff-btn when hover */
+.taste-diff-btn:hover #arrow {
+  border: solid #32695c;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.about-us-trail-ridge-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
 }
