@@ -5,6 +5,7 @@
 }
 
 .products {
+  height: 350px;
   width: 325px;
   border: 5px solid #32695c;
   display: grid;
