@@ -5,30 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us Page</title>
-    <link rel="stylesheet" href="trail-ridge-coffee/assets/css/about-us-stylesheet.css">
+    <link rel="stylesheet" href="/assets/css/top-nav-component.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- start navigation component -->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">Simple header</span>
-            </a>
+    <header>
+        <!-- Main Top Menu -->
+        <nav>
+            <div id="navbar">
+                <div id="logo">
+                    <img src="/assets/img/tr-logo-straight-300px.png" alt="Trail Ridge Coffee Company" />
+                </div>
+                <div id="links">
+                    <a href="">Shop</a>
+                    <a href="">News</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+                <div id="cart">
+                    <img src="/assets/img/cart-icon.png" alt="shopping cart" />
+                </div>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <div class="mobile-btn">
+                    <a id="menu-btn" onclick="myFunction()" class="fa fa-bars fa-2x"></a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="mobile-links">
+                <li class="nav-list"><a href="#">Home</a></li>
+                <li class="nav-list"><a href="#">Gallery</a></li>
+                <li class="nav-list"><a href="#">Blog</a></li>
+                <li class="nav-list"><a href="#">Portfolio</a></li>
+                <li class="nav-list"><a href="#">Contact</a></li>
             </ul>
-        </header>
-    </div>
+        </div>
+    </header>
 
-    <!-- end navigation component -->
 </body>
 </html>
