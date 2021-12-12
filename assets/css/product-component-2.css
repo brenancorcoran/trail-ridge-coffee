@@ -158,3 +158,54 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+/* MEDIA QUERIES */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  /* Product Border */
+  .products {
+    height: 535px;
+    width: 625px;
+  }
+
+  /* Product description */
+  .product-2 h1 {
+    font-size: 18px;
+    width: 367px;
+    margin-bottom: 25px;
+  }
+
+  /* Arrow for buy-now-btn */
+  #arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 4.5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 20px;
+  }
+
+  /* Style The Dropdown Button */
+  .dropbtn {
+    font-size: 24px;
+    width: 375px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-size: 20px;
+  }
+
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    width: 375px;
+  }
+
+  /*Text for add-to-cart-btn */
+  .add-to-cart {
+    font-size: 24px;
+  }
+
+}
