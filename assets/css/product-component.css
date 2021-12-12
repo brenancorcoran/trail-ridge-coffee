@@ -158,3 +158,11 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+/* Tablet and up for product component*/
+@media (min-width: 768px) {
+}
+
+/* Desktop and up for product component */
+@media (min-width: 1440px) {
+}
