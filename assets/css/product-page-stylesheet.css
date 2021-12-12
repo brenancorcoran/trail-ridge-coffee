@@ -1,9 +1,136 @@
+header {
+  margin: 0;
+  width: fit-content;
+}
+
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #e0d8ba;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#cart {
+  margin: 40px;
+}
+
+.logo span {
+  color: #32695cs;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#links a:hover {
+  color: #32695c;
+  text-decoration: underline;
+}
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+.mobile-btn {
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+  }
+}
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+/* Product 1 component */
 .product-1 {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
 }
 
+/* Product Border */
 .products {
   height: 350px;
   width: 325px;
@@ -14,12 +141,22 @@
   margin-bottom: 5%;
 }
 
+/* Coffee bag img */
 .coffee-bag-1 {
   padding-top: 25px;
   padding-bottom: 10px;
   max-width: 35%;
 }
 
+/* Hidden text for product title and description (for desktop use) */
+.desktop-coffee-title {
+  display: none;
+}
+.desktop-coffee-desc {
+  display: none;
+}
+
+/* Product description */
 .product-1 h1 {
   font-family: Roboto;
   font-weight: bold;
@@ -196,6 +333,7 @@
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     font-size: 20px;
+    width: 375px;
   }
 
   /* Add to Cart Button */
@@ -207,5 +345,111 @@
   .add-to-cart {
     font-size: 24px;
   }
+}
 
+/* Desktop and up */
+
+@media (min-width: 992px) {
+  html {
+    display: grid;
+    place-content: center;
+  }
+
+  .product-1 {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 200px 250px;
+  }
+
+  /* GRID ORDER */
+  .dropdown {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .product-1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .desktop-coffee {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .add-to-cart-btn {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -88px;
+  }
+
+  /* Hide Item Description Border */
+  .products h1 {
+    display: none;
+  }
+
+  /* Show Item Title and description for desktop */
+  .desktop-coffee-title {
+    display: grid;
+    text-decoration: underline;
+    margin-top: 350px;
+  }
+
+  .desktop-coffee-desc {
+    display: grid;
+  }
+
+  .product h1 {
+    text-align: left;
+  }
+
+  /* Coffee bag img */
+  .coffee-bag-1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 45%;
+  }
+
+  /* Green Border */
+  .products {
+    height: 350px;
+    width: 325px;
+    border: 5px solid #32695c;
+    margin-bottom: 0;
+  }
+
+  /* Dropdown Menu */
+  .dropdown {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropbtn {
+    width: 380px;
+    height: 42px;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-size: 20px;
+    width: 380px;
+  }
+
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    align-content: left;
+    width: 270px;
+    margin-top: 150px;
+  }
+
+  /*Text for add-to-cart-btn */
+  .add-to-cart {
+    font-size: 24px;
+  }
 }
