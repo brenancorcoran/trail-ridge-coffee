@@ -5,6 +5,9 @@
 .main-footer .footer-elements {
   width: 182px;
 }
+.main-footer .footer-img {
+  width: 200px;
+}
 .main-footer ul li {
   list-style-type: none;
   font-weight: 600;
