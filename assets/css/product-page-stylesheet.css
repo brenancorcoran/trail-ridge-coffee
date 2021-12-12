@@ -1,6 +1,5 @@
-header {
+body {
   margin: 0;
-  width: fit-content;
 }
 
 #navbar {
@@ -25,7 +24,6 @@ header {
   color: #000;
   text-transform: uppercase;
 }
-
 #cart {
   margin: 40px;
 }
@@ -92,9 +90,10 @@ header {
   margin-left: 50px;
 }
 
-a {
+#links a {
   font-family: 'Open Sans', sans-serif;
 }
+
 .mobile-btn {
   font-size: 30px;
   cursor: pointer;
@@ -347,109 +346,4 @@ a {
   }
 }
 
-/* Desktop and up */
 
-@media (min-width: 992px) {
-  html {
-    display: grid;
-    place-content: center;
-  }
-
-  .product-1 {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 200px 250px;
-  }
-
-  /* GRID ORDER */
-  .dropdown {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .product-1 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .desktop-coffee {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .add-to-cart-btn {
-    grid-column: 2;
-    grid-row: 2;
-    margin-left: -88px;
-  }
-
-  /* Hide Item Description Border */
-  .products h1 {
-    display: none;
-  }
-
-  /* Show Item Title and description for desktop */
-  .desktop-coffee-title {
-    display: grid;
-    text-decoration: underline;
-    margin-top: 350px;
-  }
-
-  .desktop-coffee-desc {
-    display: grid;
-  }
-
-  .product h1 {
-    text-align: left;
-  }
-
-  /* Coffee bag img */
-  .coffee-bag-1 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    max-width: 45%;
-  }
-
-  /* Green Border */
-  .products {
-    height: 350px;
-    width: 325px;
-    border: 5px solid #32695c;
-    margin-bottom: 0;
-  }
-
-  /* Dropdown Menu */
-  .dropdown {
-    margin: 0;
-    padding: 0;
-  }
-
-  .dropbtn {
-    width: 380px;
-    height: 42px;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    font-size: 20px;
-    width: 380px;
-  }
-
-  /* Add to Cart Button */
-  .add-to-cart-btn {
-    align-content: left;
-    width: 270px;
-    margin-top: 150px;
-  }
-
-  /*Text for add-to-cart-btn */
-  .add-to-cart {
-    font-size: 24px;
-  }
-}
