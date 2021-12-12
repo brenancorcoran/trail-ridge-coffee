@@ -228,6 +228,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 300px;
+    margin-bottom: 150px;
   }
 
   /* --++ORDER++-- */
@@ -253,17 +254,18 @@
 
   /* dropdown menu with products */
   .dropbtn {
-    width: 380px;
-    height: 50px;
-    padding-top: 11px;
+    width: 280px;
+    height: 30px;
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    width: 280px;
   }
 
   .products {
     margin-top: 10px;
-  }
-
-  .dropdown-content {
-    width: 380px;
   }
 
   .products h1 {
@@ -282,7 +284,7 @@
   }
 
   .desktop-coffee {
-    display: grid;
+    display: block;
     margin-top: 250px;
   }
 
@@ -290,7 +292,11 @@
     text-align: left;
   }
 
-  .add-to-cart-btn{
+  .desktop-coffee-title {
+    text-decoration: underline;
+  }
+
+  .add-to-cart-btn {
     width: 225px;
     margin-top: 150px;
     margin-left: -135px;

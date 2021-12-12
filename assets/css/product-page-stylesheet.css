@@ -388,15 +388,8 @@ body {
     width: 280px;
   }
 
-  #arrow {
-  }
-
   .products {
     margin-top: 10px;
-  }
-
-  .dropdown-content {
-    width: 380px;
   }
 
   .products h1 {
@@ -415,7 +408,7 @@ body {
   }
 
   .desktop-coffee {
-    display: grid;
+    display: block;
     margin-top: 250px;
   }
 
@@ -433,6 +426,7 @@ body {
     margin-left: -135px;
   }
 }
+
 
 /* ======FOOTER===== */
 .main-footer {
