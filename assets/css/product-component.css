@@ -1,3 +1,4 @@
+/* =====PRODUCT 1 COMPONENT CSS===== */
 /* Product 1 component */
 .product-1 {
   margin-top: 30px;
@@ -21,15 +22,7 @@
 .coffee-bag-1 {
   padding-top: 25px;
   padding-bottom: 10px;
-  max-width: 35%;
-}
-
-/* Hidden text for product title and description (for desktop use) */
-.desktop-coffee-title {
-  display: none;
-}
-.desktop-coffee-desc {
-  display: none;
+  width: 35%;
 }
 
 /* Product description */
@@ -172,6 +165,11 @@
   -webkit-transform: rotate(-45deg);
 }
 
+/* Hide h1 for desktop purposes */
+.desktop-coffee {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* Tablet and up */
@@ -226,25 +224,19 @@
 /* Desktop and up */
 
 @media (min-width: 992px) {
-  html {
-    display: grid;
-    place-content: center;
-  }
-
   .product-1 {
-    margin-top: 25px;
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 200px 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px;
   }
 
-  /* GRID ORDER */
+  /* --++ORDER++-- */
   .dropdown {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .product-1 {
+  .products {
     grid-column: 1;
     grid-row: 2;
   }
@@ -257,75 +249,50 @@
   .add-to-cart-btn {
     grid-column: 2;
     grid-row: 2;
-    margin-left: -88px;
   }
 
-  /* Hide Item Description Border */
+  /* dropdown menu with products */
+  .dropbtn {
+    width: 380px;
+    height: 50px;
+    padding-top: 11px;
+  }
+
+  .products {
+    margin-top: 10px;
+  }
+
+  .dropdown-content {
+    width: 380px;
+  }
+
   .products h1 {
     display: none;
   }
 
-  /* Show Item Title and description for desktop */
-  .desktop-coffee-title {
-    display: grid;
-    text-decoration: underline;
-    margin-top: 350px;
+  .products {
+    border: none;
+    border-right: 2px solid black;
   }
 
-  .desktop-coffee-desc {
-    display: grid;
+  .coffee-bag-1 {
+    margin: 0;
+    padding: 0;
+    width: 30%;
   }
 
-  .product h1 {
+  .desktop-coffee {
+    display: grid;
+    margin-top: 250px;
+  }
+
+  .desktop-coffee h1 {
     text-align: left;
   }
 
-  /* Coffee bag img */
-  .coffee-bag-1 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    max-width: 45%;
-  }
-
-  /* Green Border */
-  .products {
-    height: 350px;
-    width: 325px;
-    border: 5px solid #32695c;
-    margin-bottom: 0;
-  }
-
-  /* Dropdown Menu */
-  .dropdown {
-    margin: 0;
-    padding: 0;
-  }
-
-  .dropbtn {
-    width: 380px;
-    height: 42px;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    font-size: 20px;
-    width: 380px;
-  }
-
-  /* Add to Cart Button */
-  .add-to-cart-btn {
-    align-content: left;
-    width: 270px;
+  .add-to-cart-btn{
+    width: 225px;
     margin-top: 150px;
-  }
-
-  /*Text for add-to-cart-btn */
-  .add-to-cart {
-    font-size: 24px;
+    margin-left: -135px;
   }
 }
