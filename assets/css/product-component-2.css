@@ -1,9 +1,13 @@
-.product-2 {
+/* =====PRODUCT 1 COMPONENT CSS===== */
+/* Product 1 component */
+.product-1 {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
 }
 
+/* Product Border */
 .products {
   height: 350px;
   width: 325px;
@@ -14,13 +18,15 @@
   margin-bottom: 5%;
 }
 
-.coffee-bag-2 {
+/* Coffee bag img */
+.coffee-bag-1 {
   padding-top: 25px;
   padding-bottom: 10px;
-  max-width: 35%;
+  width: 35%;
 }
 
-.product-2 h1 {
+/* Product description */
+.product-1 h1 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 12px;
@@ -159,6 +165,11 @@
   -webkit-transform: rotate(-45deg);
 }
 
+/* Hide h1 for desktop purposes */
+.desktop-coffee {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* Tablet and up */
@@ -170,9 +181,9 @@
   }
 
   /* Product description */
-  .product-2 h1 {
+  .product-1 h1 {
     font-size: 18px;
-    width: 367px;
+    width: 355px;
     margin-bottom: 25px;
   }
 
@@ -196,6 +207,7 @@
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     font-size: 20px;
+    width: 375px;
   }
 
   /* Add to Cart Button */
@@ -207,5 +219,86 @@
   .add-to-cart {
     font-size: 24px;
   }
+}
 
+/* Desktop and up */
+
+@media (min-width: 992px) {
+  .product-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px;
+    margin-bottom: 150px;
+  }
+
+  /* --++ORDER++-- */
+  .dropdown {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .products {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .desktop-coffee {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .add-to-cart-btn {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* dropdown menu with products */
+  .dropbtn {
+    width: 280px;
+    height: 30px;
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    width: 280px;
+  }
+
+  .products {
+    margin-top: 10px;
+  }
+
+  .products h1 {
+    display: none;
+  }
+
+  .products {
+    border: none;
+    border-right: 2px solid black;
+  }
+
+  .coffee-bag-1 {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .desktop-coffee {
+    display: block;
+    margin-top: 250px;
+  }
+
+  .desktop-coffee h1 {
+    text-align: left;
+  }
+
+  .desktop-coffee-title {
+    text-decoration: underline;
+  }
+
+  .add-to-cart-btn {
+    width: 225px;
+    margin-top: 150px;
+    margin-left: -135px;
+  }
 }
