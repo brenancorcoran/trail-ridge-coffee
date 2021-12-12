@@ -112,3 +112,36 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+/* --Media Queries-- */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .newsletter-main h1 {
+    font-size: 24px;
+  }
+
+  .newsletter-main h2 {
+    font-size: 30px;
+    margin-bottom: 8%;
+  }
+
+  .newsletter-main h3 {
+    font-size: 85px;
+    margin-bottom: 2%;
+  }
+
+  .newsletter {
+    width: 625px;
+  }
+
+  #email-input {
+    width: 250px;
+    height: 25px;
+    padding-left: 10px;
+  }
+
+  .sign-up-btn {
+    margin-bottom: 20px;
+  }
+}
