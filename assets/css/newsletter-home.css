@@ -16,7 +16,6 @@
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
-  padding-top: 10px;
   text-align: center;
   margin-bottom: -0.5%;
 }
@@ -26,17 +25,18 @@
   font-weight: normal;
   font-size: 14px;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: -3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 221px;
 }
 
 .newsletter-home-main h3 {
   font-family: Roboto;
   font-weight: bold;
   text-align: left;
-  padding-left: 47px;
   margin-bottom: 1%;
+  padding-left: 45px;
 }
 
 /* Email Input Box */
@@ -45,7 +45,6 @@
   margin: 0 auto;
   color: grey;
 }
-
 
 /* Buy Now Button */
 .sign-up-btn {
@@ -105,4 +104,17 @@
   padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+/* --Media Queries-- */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .newsletter {
+    width: 625px;
+  }
+
+  .newsletter-home-main h3 {
+    padding-left: 200px;
+  }
 }
