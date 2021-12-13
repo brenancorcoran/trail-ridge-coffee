@@ -123,6 +123,9 @@ a {
   .cart.mobi-cart {
     display: none;
   }
+  .cart.desk-cart {
+    display: block;
+  }
 }
 
 /* =====PRODUCT 1 COMPONENT CSS===== */
