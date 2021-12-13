@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  text-align: center;
 }
 
 /* Product Border */
@@ -20,9 +21,9 @@
 
 /* Coffee bag img */
 .coffee-bag-1 {
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 10px;
-  width: 35%;
+  width: 30%;
 }
 
 /* Product description */
@@ -176,7 +177,7 @@
 @media (min-width: 768px) {
   /* Product Border */
   .products {
-    height: 535px;
+    height: 400px;
     width: 625px;
   }
 
@@ -185,6 +186,10 @@
     font-size: 18px;
     width: 355px;
     margin-bottom: 25px;
+  }
+
+  .coffee-bag-1 {
+    width: 20%;
   }
 
   /* Arrow for buy-now-btn */
