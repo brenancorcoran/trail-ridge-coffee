@@ -1,9 +1,10 @@
+/* Small devices (outside media queries) */
+@media (max-width: 425px){
 .about-us-main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: fr;
   place-items: center;
 }
-
 .about-us {
   width: 325px;
   border: 5px solid #32695c;
@@ -13,7 +14,6 @@
   margin-bottom: 5%;
   margin-top: 75px;
 }
-
 .about-us-header {
   font-family: Roboto;
   font-weight: bold;
@@ -21,8 +21,8 @@
   font-size: 18px;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: -200px;
 }
-
 .about-us-text {
   font-family: Roboto;
   font-weight: normal;
@@ -30,12 +30,13 @@
   font-size: 12px;
   text-align: center;
   width: 265px;
-  margin-top: 20px;
+  margin-top: 60px;
   line-height: 1.5;
 }
-
 /* Taste the diff Button */
 .taste-diff-btn {
+  grid-column: 1;
+  grid-row: 2;
   margin-bottom: 25px;
   background-color: #32695c;
   width: 230px;
@@ -45,7 +46,6 @@
   margin-bottom: 15px;
   margin-top: 5%;
 }
-
 /*Text for taste-diff-btn */
 .taste-diff {
   color: white;
@@ -60,7 +60,156 @@
   text-align: center;
   text-decoration: none;
 }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about-us-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.about-us {
+  width: 325px;
+  border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-bottom: 5%;
+  margin-top: 75px;
+}
+.about-us-header {
+  font-family: Roboto;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -200px;
+}
+.about-us-text {
+  font-family: Roboto;
+  font-weight: normal;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  width: 265px;
+  margin-top: 60px;
+  line-height: 1.5;
+}
+/* Taste the diff Button */
+.taste-diff-btn {
+  grid-column: 1;
+  grid-row: 2;
+  margin-bottom: 25px;
+  background-color: #32695c;
+  width: 230px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5%;
+}
+/*Text for taste-diff-btn */
+.taste-diff {
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6%;
+  padding-right: 5%;
+  text-align: center;
+  text-decoration: none;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.about-us-header {
 
+  display:fixed;
+  font-family: Roboto;
+  font-weight: bold;
+  color: black;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+.about-us {
+  width: 1075px;
+  height: 475px;
+  border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-bottom: 5%;
+  margin-top: 75px;
+}
+.desktop-line-about-us{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr;
+  margin-bottom: 80px;
+  width: 1075px;
+
+}
+.about-us-trail-ridge-logo {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 20px;
+  min-height: 261px;
+  min-width: 261px;
+}
+.about-us-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.about-us-text {
+  font-family: Roboto;
+  font-weight: normal;
+  grid-row: 1;
+  grid-column: 2;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  width: 375px;
+  height: 92px;
+  margin-top:-120px;
+  line-height: 1.5;
+}
+/* Taste the diff Button */
+.taste-diff-btn {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #32695c;
+  width: 376px;
+  height: 68px;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+/*Text for taste-diff-btn */
+.taste-diff {
+  grid-row: 2;
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  padding-left: 12%;
+  padding-right: 10%;
+  text-align: center;
+  text-decoration: none;
+}
 /* Arrow for taste-diff-btn */
 #arrow {
   border: solid white;
@@ -80,10 +229,20 @@
   padding-top: 9px;
   text-decoration: none;
 }
-
+}
 /* Change color of text for taste-diff-btn when hover */
 .taste-diff-btn:hover .taste-diff {
   color: #32695c;
+
+/* Arrow for taste-diff-btn */
+#arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 }
 
 /* Change color of arrow for taste-diff-btn when hover */
@@ -100,4 +259,170 @@
   width: 100px;
   height: 100px;
   margin-bottom: 15px;
+}
+body {
+  margin: 0;
+}
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #e0d8ba;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+#cart {
+  margin: 40px;
+}
+
+.logo span {
+  color: #32695cs;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#links a:hover {
+  color: #32695c;
+  text-decoration: underline;
+}
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+.mobile-btn {
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+  }
+}
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+.main-footer {
+  background: #e0d8ba;
+  font-family: 'Roboto', sans-serif;
+}
+.main-footer .footer-elements {
+  width: 182px;
+}
+.main-footer .footer-img {
+  width: 200px;
+}
+.main-footer ul li {
+  list-style-type: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.main-footer a {
+  color: #000;
+  text-decoration: none;
+}
+.main-footer a:hover {
+  color: #000;
+  transition: text-decoration 1000ms;
+  text-decoration: underline;
+  transition: text-shadow 500ms;
+  text-shadow: 2px 2px 12px #3d464f;
+}
+.social {
+  text-align: center;
+}
+.social .social-icon {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+svg:hover {
+  transition: filter 500ms;
+  -webkit-filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
+}
+.main-footer .social .social-icon {
+  margin-right: 20px;
+}
+.main-footer .social .social-icon.twitter {
+  display: inline-block;
+  position: relative;
+  top: -3px;
 }
