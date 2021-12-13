@@ -123,4 +123,8 @@ a {
   .cart.mobi-cart {
     display: none;
   }
+  .cart.desk-cart {
+    display: grid;
+    place-content: center;
+  }
 }
