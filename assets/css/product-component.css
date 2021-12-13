@@ -166,7 +166,7 @@
 }
 
 /* Hide h1 for desktop purposes */
-.desktop-coffee {
+#desktop-coffee {
   display: none;
 }
 
@@ -226,79 +226,86 @@
 @media (min-width: 992px) {
   .product-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 300px;
-    margin-bottom: 150px;
+    grid-template-columns: 400px 400px;
+    place-content: center;
+  }
+
+  .product-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 
   /* --++ORDER++-- */
-  .dropdown {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
   .products {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .desktop-coffee {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .add-to-cart-btn {
-    grid-column: 2;
     grid-row: 2;
   }
 
   /* dropdown menu with products */
+  .dropdown {
+  }
+
   .dropbtn {
-    width: 280px;
+    width: 220px;
     height: 30px;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .dropdown-content {
-    width: 280px;
+    width: 220px;
+    font-size: 14px;
   }
 
   .products {
     margin-top: 10px;
+    border: none;
+    width: 200px;
+    height: 300px;
   }
 
   .products h1 {
     display: none;
+    font-weight: none;
   }
 
-  .products {
-    border: none;
-    border-right: 2px solid black;
+  .desc-and-buy-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-left: 2px solid black;
+    padding-left: 80px;
   }
 
   .coffee-bag-1 {
-    margin: 0;
-    padding: 0;
-    width: 30%;
+    width: 150px;
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
   }
 
-  .desktop-coffee {
-    display: block;
-    margin-top: 250px;
+  #desktop-coffee {
+    display: grid;
   }
 
-  .desktop-coffee h1 {
+  #desktop-coffee h1 {
     text-align: left;
+    font-size: 18px;
   }
 
-  .desktop-coffee-title {
+  #desktop-coffee h1:nth-child(2) {
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  #desktop-coffee-title {
     text-decoration: underline;
   }
 
   .add-to-cart-btn {
-    width: 225px;
-    margin-top: 150px;
-    margin-left: -135px;
+    width: 200px;
+  }
+
+  .add-to-cart {
+    font-size: 18px;
   }
 }
