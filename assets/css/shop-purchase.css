@@ -9,6 +9,7 @@
   border: 5px solid #32695c;
   display: grid;
   grid-template-columns: 1fr;
+  place-items: center;
 }
 
 .shop-purchase-home h1 {
@@ -16,22 +17,18 @@
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
   text-align: center;
-  margin-bottom: 5%;
 }
 
-/* Purchase Coffee Button */
+/* Purchase Button */
 .purchase-btn {
+  margin-top: 20px;
   margin-bottom: 25px;
   background-color: #32695c;
-  width: 235px;
+  width: 265px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 /*Text for purchase-btn */
@@ -43,14 +40,14 @@
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: center;
   text-decoration: none;
 }
 
 /* Arrow for purchase-btn */
-#arrow {
+#arrow-2 {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -75,11 +72,28 @@
 }
 
 /* Change color of arrow for purchase-btn when hover */
-.purchase-btn:hover #arrow {
+.purchase-btn:hover #arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+/* --Media Queries-- */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .shop-purchase-home .shop-purchase {
+    width: 625px;
+  }
+
+  .shop-purchase h1 {
+    font-size: 24px;
+  }
+
+  .shop-purchase .purchase-btn {
+    width: 275px;
+  }
 }
