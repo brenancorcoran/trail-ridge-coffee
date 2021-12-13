@@ -22,11 +22,14 @@ body {
 #logo img {
   width: 230px;
 }
-#cart {
+.cart {
   display: grid;
   justify-content: end;
   align-content: center;
 }
+.cart.desk-cart {
+  display: none;
+} 
 
 #links {
   display: grid;
@@ -116,6 +119,9 @@ a {
   }
   #logo img {
     width: 300px;
+  }
+  .cart.mobi-cart {
+    display: none;
   }
 }
 
