@@ -124,7 +124,8 @@ a {
     display: none;
   }
   .cart.desk-cart {
-    display: block;
+    display: grid;
+    place-content: center;
   }
 }
 
