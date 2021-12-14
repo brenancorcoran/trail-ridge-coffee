@@ -249,163 +249,137 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  text-align: center;
   margin-bottom: 30px;
 }
 
-/* Product Border */
-.product-home .products {
-  height: 375px;
-  width: 325px;
+.product {
   border: 5px solid #32695c;
+  width: 325px;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  text-align: center;
 }
 
-.product-home .desc-and-buy-wrapper {
-  grid-row: 1;
-  align-content: center;
-}
-
-/* Title */
-.product-home #desktop-coffee-title {
-  display: grid;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-/* Coffee bag img */
-.product-home .coffee-bag-1 {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  width: 25%;
-}
-
-/* Product description */
-.product-home h1 {
+.product h1 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  padding-bottom: 5px;
-}
-
-.product-home #coffee-desc {
-  width: 225px;
-}
-
-/* Add to Cart Button */
-.product-home .add-to-cart-btn {
-  background-color: #32695c;
-  width: 215px;
+  font-size: 18px;
+  text-decoration: underline;
   padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
+}
+
+.coffee-bag-1 {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.product h2 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-content: center;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/*Text for add-to-cart-btn */
-.product-home .add-to-cart {
+/* Buy Now Button */
+.buy-now-btn {
+  margin-bottom: 25px;
+  background-color: #32695c;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5%;
+}
+
+/*Text for buy-now-btn */
+.buy-now {
   color: white;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   text-decoration: none;
 }
 
-/* Arrow for add-to-cart-btn */
-.product-home #arrow-2 {
+/* Arrow for buy-now-btn */
+#arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   display: inline-block;
-  padding: 3.5px;
+  padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-/* Hover animation for add-to-cart-btn */
-.product-home .add-to-cart-btn:hover {
+/* Hover animation for buy-now-btn */
+.buy-now-btn:hover {
   color: white;
   background-color: #ffffff;
   border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 8px;
   text-decoration: none;
 }
 
-/* Change color of text for add-to-cart-btn when hover */
-.product-home .add-to-cart-btn:hover .add-to-cart {
+/* Change color of text for buy-now-btn when hover */
+.buy-now-btn:hover .buy-now {
   color: #32695c;
 }
 
-/* Change color of arrow for add-to-cart-btn when hover */
-.product-home .add-to-cart-btn:hover #arrow-2 {
+/* Change color of arrow for buy-now-btn when hover */
+.buy-now-btn:hover #arrow {
   border: solid #32695c;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   display: inline-block;
-  padding: 3.5px;
+  padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-/* Hide h1 for desktop purposes */
-.product-home #desktop-coffee-desc {
-  display: none;
-}
-
-/* MEDIA QUERIES */
-
-/* Tablet and up */
+/* Media Queries */
 @media (min-width: 768px) {
-  /* Product Border */
-  .product-home .products {
-    height: 200px;
+  .product {
     width: 625px;
-    display: grid;
+    height: 200px;
     grid-template-columns: 1fr 1fr;
-  }
-
-  /* Hide product description */
-  .product-home h1 {
-    display: none;
-  }
-
-  .product-home #desktop-coffee-title {
     text-align: left;
   }
 
-  .product-home #desktop-coffee-desc {
-    display: grid;
-    text-align: left;
-  }
-
-  .product-home .coffee-bag-1 {
-    width: 80px;
+  .coffee-bag-1 {
     grid-column: 1;
-    padding-top: 25px;
+    width: 75px;
+    margin-top: -40px;
     border-right: 2px solid black;
     padding-right: 80px;
   }
 
-  .product-home .desc-and-buy-wrapper {
+  .product h1 {
     grid-column: 2;
+    text-align: left;
+    margin-left: -65px;
   }
 
-  .product-home .add-to-cart-btn {
-    grid-column: 2;
-    height: 18px;
-    width: 160px;
+  .product h2 {
+    margin-top: -40px;
   }
 
-  .product-home .add-to-cart {
-    font-size: 14px;
+  .buy-now-btn {
+    grid-column: 2;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 50px;
   }
 }
+
 
 /* =====Newsletter home CSS===== */
 .newsletter-home-main {

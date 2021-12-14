@@ -39,60 +39,60 @@
   margin-bottom: 10px;
 }
 
-/* Add to Cart Button */
-.add-to-cart-btn {
-  margin-top: 20px;
+/* Buy Now Button */
+.buy-now-btn {
   margin-bottom: 25px;
   background-color: #32695c;
-  width: 205px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5%;
 }
 
-/*Text for add-to-cart-btn */
-.add-to-cart {
+/*Text for buy-now-btn */
+.buy-now {
   color: white;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   text-decoration: none;
 }
 
-/* Arrow for add-to-cart-btn */
-#arrow-2 {
+/* Arrow for buy-now-btn */
+#arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-/* Hover animation for add-to-cart-btn */
-.add-to-cart-btn:hover {
+/* Hover animation for buy-now-btn */
+.buy-now-btn:hover {
   color: white;
   background-color: #ffffff;
-  border: 1px solid #32695c;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 8px;
   text-decoration: none;
 }
 
-/* Change color of text for add-to-cart-btn when hover */
-.add-to-cart-btn:hover .add-to-cart {
+/* Change color of text for buy-now-btn when hover */
+.buy-now-btn:hover .buy-now {
   color: #32695c;
 }
 
-/* Change color of arrow for add-to-cart-btn when hover */
-.add-to-cart-btn:hover #arrow-2 {
+/* Change color of arrow for buy-now-btn when hover */
+.buy-now-btn:hover #arrow {
   border: solid #32695c;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 4.5px;
   transform: rotate(-45deg);
@@ -123,13 +123,13 @@
   }
 
   .product h2 {
-    margin-top: -60px;
+    margin-top: -40px;
   }
 
-  .add-to-cart-btn {
+  .buy-now-btn {
     grid-column: 2;
     text-align: center;
-    margin-top: -50px;
-    margin-left: -10px;
+    margin-top: -30px;
+    margin-left: 50px;
   }
 }
