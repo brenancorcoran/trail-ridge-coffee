@@ -183,8 +183,7 @@
 
   /* Product description */
   .product-1 h1 {
-    font-size: 18px;
-    width: 355px;
+    font-size: 16px;
     margin-bottom: 25px;
   }
 
@@ -282,7 +281,7 @@
   }
 
   .coffee-bag-1 {
-    width: 150px;
+    width: 100px;
     max-width: 100%;
     margin-top: 0;
     padding-top: 0;
