@@ -9,13 +9,16 @@
 
 /* Product Border */
 .products {
-  height: 350px;
+  height: 360px;
   width: 325px;
   border: 5px solid #32695c;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  margin-bottom: 5%;
+}
+
+.desc-and-buy-wrapper {
+  grid-row: 1;
 }
 
 /* Title */
@@ -23,15 +26,14 @@
   display: grid;
   text-decoration: underline;
   font-size: 18px;
-  grid-row: 1;
-  padding-left: 40px;
+  padding-left: 14px;
 }
 
 /* Coffee bag img */
 .coffee-bag-1 {
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 10px;
-  width: 30%;
+  width: 25%;
 }
 
 /* Product description */
@@ -41,92 +43,28 @@
   font-size: 12px;
   text-align: center;
   width: 185px;
-  margin-bottom: 25px;
+  padding-bottom: 5px;
 }
 
 /* Arrow for buy-now-btn */
 #arrow {
   border: solid white;
-  border-width: 0 5px 5px 0;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 4.5px;
+  padding: 3.5px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-left: 20px;
 }
 
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: #32695c;
-  color: white;
-  padding: 16px;
-  font-size: 18px;
-  font-family: Roboto;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  width: 265px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 265px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  font-size: 18px;
-  font-family: Roboto;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #32695c;
-}
-
-/* HIDE DROPDOWN MENU ON MOBILE */
-.dropdown {
-  display: none;
-}
-
 /* Add to Cart Button */
 .add-to-cart-btn {
-  margin-top: 20px;
-  margin-bottom: 25px;
   background-color: #32695c;
-  width: 265px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 215px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 /*Text for add-to-cart-btn */
@@ -149,7 +87,7 @@
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
-  padding: 4.5px;
+  padding: 3.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -201,146 +139,36 @@
     display: none;
   }
 
-  .coffee-bag-1 {
-    width: 80px;
-  }
-
   #desktop-coffee-title {
-    padding-left: 0;
-    margin-left: 0;
     text-align: left;
-    margin-top: -20px;
-    margin-bottom: 5px;
+    margin-left: -14px;
   }
 
   #desktop-coffee-desc {
     display: grid;
     text-align: left;
-    align-content: center;
-  }
-
-  /* line in middle */
-  #desktop-coffee {
-    border-left: 2px solid black;
-    padding-left: 40px;
-  }
-
-  /* Arrow for buy-now-btn */
-  #arrow {
-    border: solid white;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 4.5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-left: 20px;
-  }
-
-  /* Add to Cart Button */
-  .add-to-cart-btn {
-    width: 200px;
-    height: 15px;
-    margin-left: 40px;
-  }
-
-  /*Text for add-to-cart-btn */
-  .add-to-cart {
-    font-size: 16px;
-  }
-
-  /* formating */
-  .desc-and-buy-wrapper {
-    padding-left: 200px;
-    margin-top: -30%;
-  }
-
-}
-
-/* Desktop and up */
-
-@media (min-width: 992px) {
-  .product-home {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    place-content: center;
-  }
-
-  .product-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
-
-  /* --++ORDER++-- */
-  .products {
-    grid-row: 2;
-  }
-
-  /* dropdown menu with products */
-  .dropdown {
-  }
-
-  .dropbtn {
-    width: 220px;
-    height: 30px;
-    padding-top: 5px;
-    font-size: 14px;
-  }
-
-  .dropdown-content {
-    width: 220px;
-    font-size: 14px;
-  }
-
-  .products {
-    margin-top: 10px;
-    border: none;
-    width: 200px;
-    height: 300px;
-  }
-
-  .products h1 {
-    display: none;
-    font-weight: none;
-  }
-
-  .desc-and-buy-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-left: 2px solid black;
-    padding-left: 80px;
   }
 
   .coffee-bag-1 {
-    width: 100px;
-    max-width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    width: 80px;
+    grid-column: 1;
+    padding-top: 25px;
+    border-right: 2px solid black;
+    padding-right: 80px;
+    margin-left: 100px;
   }
 
-  #desktop-coffee {
-    display: grid;
-  }
-
-  #desktop-coffee h1 {
-    text-align: left;
-    font-size: 18px;
-  }
-
-  #desktop-coffee h1:nth-child(2) {
-    font-weight: normal;
-    font-size: 14px;
-  }
-
-  #desktop-coffee-title {
-    text-decoration: underline;
+  .desc-and-buy-wrapper {
+    grid-column: 2;
   }
 
   .add-to-cart-btn {
-    width: 200px;
+    grid-column: 2;
+    height: 18px;
+    width: 160px;
   }
 
   .add-to-cart {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
