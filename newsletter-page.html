@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page - Trail Ridge Roast - Trail Ridge Roast</title>
-    <link rel="stylesheet" href="../assets/css/product-page-stylesheet.css">
+    <title>Newsletter Page - Trail Ridge Roast</title>
+    <link rel="stylesheet" href="../assets/css/newsletter-page.css">
     <script src="../assets/js/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -23,8 +23,8 @@
                     </div>
                 </div>
                 <div id="links">
-                    <a href="product-home.html">Shop</a>
-                    <a href="newsletter-home.html">News</a>
+                    <a href="product-page.html">Shop</a>
+                    <a href="newsletter-page.html">News</a>
                     <a href="about-us.html">About</a>
                     <a href="#">Contact</a>
                 </div>
@@ -38,37 +38,41 @@
         <!-- Mobile Menu -->
         <div id="tr-sidenav" class="sidenav">
             <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="product-page.html">Shop</a>
-            <a href="newsletter-page.html">News</a>
+            <a href="product-home.html">Shop</a>
+            <a href="newsletter-home.html">News</a>
             <a href="about-us.html">About</a>
             <a href="#">Contact</a>
         </div>
     </header>
 
-    <div class="product-1">
-        <div class="product-wrapper">
-            <div class="products">
-                <img class="coffee-bag-1" src="/assets/img/coffee-bag-1.png" alt="">
-                <h1>Become one with nature with this bold, earthy roast. Packed with a flavor that is sure to make you wake up and take on the day!</h1>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Trail Ridge Roast<i id="arrow"></i></button>
-                <div class="dropdown-content">
-                    <a href="/product-page-2.html">Trail Ridge Roast</a>
-                    <a href="/product-page.html">Great Lakes Blend</a>
-                </div>
-            </div>
-        </div>
-        <div class="desc-and-buy-wrapper">
-            <div id="desktop-coffee">
-                <h1 id="desktop-coffee-title">Trail Ridge Roast</h1>
-                <h1 id="desktop-coffee-desc">Become one with nature with this bold, earthy roast. Packed with a flavor that is sure to make you wake up and take on the day!</h1>
-            </div>
-            <div class="add-to-cart-btn">
-                <a href="#" class="add-to-cart">
-                    Add to Cart <i id="arrow-2"></i>
+    <div class="newsletter-main">
+        <h1>Sign up for our newsletter</h1>
+        <div class="newsletter">
+            <h2>receive</h2>
+            <h3>10% off</h3>
+            <h2>+ Free shipping on your first order</h2>
+
+            <input type="text" id="email-input" placeholder="emailaddress@example.com">
+
+            <div class="sign-up-btn">
+                <a href="#" class="sign-up">
+                    Sign up now <i id="arrow"></i>
                 </a>
             </div>
+
+        </div>
+    </div>
+
+    <div class="shop-purchase-home">
+        <div class="shop-purchase">
+            <h1>Shop our premium trail ridge coffee now</h1>
+
+            <div class="purchase-btn">
+                <a href="#" class="purchase">
+                    Purchase Coffee <i id="arrow-2"></i>
+                </a>
+            </div>
+
         </div>
     </div>
 
@@ -111,6 +115,5 @@
         </div>
 
     </footer>
-
 </body>
 </html>
