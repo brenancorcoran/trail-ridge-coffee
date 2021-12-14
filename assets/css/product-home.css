@@ -1,10 +1,15 @@
+/* Product Home component */
 .product-home {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  text-align: center;
 }
 
+/* Product Border */
 .products {
+  height: 360px;
   width: 325px;
   border: 5px solid #32695c;
   display: grid;
@@ -12,77 +17,98 @@
   place-items: center;
 }
 
-.coffee-bag-1 {
-  padding-top: 25px;
-  padding-bottom: 10px;
-  max-width: 30%;
+.desc-and-buy-wrapper {
+  grid-row: 1;
 }
 
+/* Title */
+#desktop-coffee-title {
+  display: grid;
+  text-decoration: underline;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+/* Coffee bag img */
+.coffee-bag-1 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 25%;
+}
+
+/* Product description */
 .product-home h1 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.product-home h2 {
-  font-family: Roboto;
-  font-weight: normal;
   font-size: 12px;
-  padding-bottom: 10px;
-}
-
-/* Buy Now Button */
-.buy-now-btn {
-  margin-bottom: 20px;
-  background-color: #32695c;
-  width: 160px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: grid;
-  grid-template-rows: 15px;
-  place-items: center;
-}
-
-/*Text for buy-now-btn */
-.buy-now {
-  color: white;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
+  width: 185px;
+  padding-bottom: 5px;
 }
 
 /* Arrow for buy-now-btn */
 #arrow {
   border: solid white;
-  border-width: 0 5px 5px 0;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 4.5px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  margin-left: 10px;
+  padding: 3.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 20px;
 }
 
-/* Hover animation for buy-now-btn */
-.buy-now-btn:hover {
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #32695c;
+  width: 215px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*Text for add-to-cart-btn */
+.add-to-cart {
   color: white;
-  background-color: #ffffff;
-  border: 2px solid #32695c;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
   text-decoration: none;
 }
 
-/* Change color of text for buy-now-btn when hover */
-.buy-now-btn:hover .buy-now {
+/* Arrow for add-to-cart-btn */
+#arrow-2 {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Hover animation for add-to-cart-btn */
+.add-to-cart-btn:hover {
+  color: white;
+  background-color: #ffffff;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+/* Change color of text for add-to-cart-btn when hover */
+.add-to-cart-btn:hover .add-to-cart {
   color: #32695c;
 }
 
-/* Change color of arrow for buy-now-btn when hover */
-.buy-now-btn:hover #arrow {
+/* Change color of arrow for add-to-cart-btn when hover */
+.add-to-cart-btn:hover #arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -91,26 +117,58 @@
   -webkit-transform: rotate(-45deg);
 }
 
-/* --Media Queries-- */
+/* Hide h1 for desktop purposes */
+#desktop-coffee-desc {
+  display: none;
+}
+
+/* MEDIA QUERIES */
 
 /* Tablet and up */
 @media (min-width: 768px) {
+  /* Product Border */
   .products {
+    height: 200px;
     width: 625px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .product-home .coffee-bag-1 {
-    width: 25%;
-  }
-  .products h1 {
-    font-size: 22px;
+  /* Hide product description */
+  .product-home h1 {
+    display: none;
   }
 
-  .products h2 {
-    font-size: 16px;
+  #desktop-coffee-title {
+    text-align: left;
+    margin-left: -14px;
   }
 
-  .buy-now-btn {
-    width: 200px;
+  #desktop-coffee-desc {
+    display: grid;
+    text-align: left;
+  }
+
+  .coffee-bag-1 {
+    width: 80px;
+    grid-column: 1;
+    padding-top: 25px;
+    border-right: 2px solid black;
+    padding-right: 80px;
+    margin-left: 100px;
+  }
+
+  .desc-and-buy-wrapper {
+    grid-column: 2;
+  }
+
+  .add-to-cart-btn {
+    grid-column: 2;
+    height: 18px;
+    width: 160px;
+  }
+
+  .add-to-cart {
+    font-size: 14px;
   }
 }

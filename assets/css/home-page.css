@@ -1,0 +1,445 @@
+/* =====Header CSS===== */
+body {
+  margin: 0;
+}
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #e0d8ba;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+#logo img {
+  width: 230px;
+}
+.cart {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+}
+.cart.desk-cart {
+  display: none;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#links a:hover {
+  color: #32695c;
+  text-decoration: underline;
+}
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+.mobile-btn {
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 992px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-btn {
+    display: none;
+  }
+  #logo img {
+    width: 300px;
+  }
+  .cart.mobi-cart {
+    display: none;
+  }
+  .cart.desk-cart {
+    display: grid;
+    place-content: center;
+  }
+}
+
+/* =====HERO CSS===== */
+body {
+  margin: 0;
+}
+.main {
+  margin-bottom: 20px;
+  font-family: 'Archivo', sans-serif;
+  border-top: solid #32695c 4px;
+  border-bottom: solid #32695c 4px;
+  background-image: url('/assets/img/desktop-hero-texture.gif');
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  font-size: 20px;
+}
+.hero img {
+  width: 100%;
+  border: solid #32695c 8px;
+  filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.9));
+}
+.hero h1 {
+  font-size: 1.5em;
+  white-space: pre-line;
+  text-align: center;
+  color: #000;
+  font-weight: 800;
+}
+.hero p {
+  padding: 0 70px;
+}
+.welcome {
+  margin-top: 30px;
+}
+.hero-desk {
+  display: none;
+}
+.hero-mbl {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .main {
+    background-image: url('/assets/img/desktop-hero-texture.gif');
+  }
+  .main-bg {
+    background-image: url('/assets/img/tr-logo-circle-400px-rotate.png');
+    background-repeat: no-repeat;
+    background-position: top -60px right;
+    height: 350px;
+    opacity: 0.3;
+    background-size: 400px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+  .hero {
+    grid-template-columns: 2fr 2fr;
+    gap: 40px;
+    margin-top: -300px;
+  }
+  .welcome {
+    margin-top: 125px;
+    max-width: 600px;
+  }
+  .hero h1 {
+    font-size: 2em;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+  .hero-mbl {
+    display: none;
+  }
+  .hero-desk {
+    display: block;
+  }
+}
+
+/* =====Product-Home CSS===== */
+/* Product Home component */
+.product-home {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Product Border */
+.products {
+  height: 360px;
+  width: 325px;
+  border: 5px solid #32695c;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.desc-and-buy-wrapper {
+  grid-row: 1;
+}
+
+/* Title */
+#desktop-coffee-title {
+  display: grid;
+  text-decoration: underline;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+/* Coffee bag img */
+.coffee-bag-1 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 25%;
+}
+
+/* Product description */
+.product-home h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  width: 185px;
+  padding-bottom: 5px;
+}
+
+/* Arrow for buy-now-btn */
+#arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 20px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #32695c;
+  width: 215px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*Text for add-to-cart-btn */
+.add-to-cart {
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Arrow for add-to-cart-btn */
+#arrow-2 {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Hover animation for add-to-cart-btn */
+.add-to-cart-btn:hover {
+  color: white;
+  background-color: #ffffff;
+  border: 2px solid #32695c;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+/* Change color of text for add-to-cart-btn when hover */
+.add-to-cart-btn:hover .add-to-cart {
+  color: #32695c;
+}
+
+/* Change color of arrow for add-to-cart-btn when hover */
+.add-to-cart-btn:hover #arrow-2 {
+  border: solid #32695c;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Hide h1 for desktop purposes */
+#desktop-coffee-desc {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  /* Product Border */
+  .products {
+    height: 200px;
+    width: 625px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Hide product description */
+  .product-home h1 {
+    display: none;
+  }
+
+  #desktop-coffee-title {
+    text-align: left;
+    margin-left: -14px;
+  }
+
+  #desktop-coffee-desc {
+    display: grid;
+    text-align: left;
+  }
+
+  .coffee-bag-1 {
+    width: 80px;
+    grid-column: 1;
+    padding-top: 25px;
+    border-right: 2px solid black;
+    padding-right: 80px;
+    margin-left: 100px;
+  }
+
+  .desc-and-buy-wrapper {
+    grid-column: 2;
+  }
+
+  .add-to-cart-btn {
+    grid-column: 2;
+    height: 18px;
+    width: 160px;
+  }
+
+  .add-to-cart {
+    font-size: 14px;
+  }
+}
+
+/* ======FOOTER CSS====== */
+.main-footer {
+  background: #e0d8ba;
+  font-family: 'Roboto', sans-serif;
+}
+.main-footer .footer-elements {
+  width: 182px;
+}
+.main-footer .footer-img {
+  width: 200px;
+}
+.main-footer ul li {
+  list-style-type: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.main-footer a {
+  color: #000;
+  text-decoration: none;
+}
+.main-footer a:hover {
+  color: #000;
+  transition: text-decoration 1000ms;
+  text-decoration: underline;
+  transition: text-shadow 500ms;
+  text-shadow: 2px 2px 12px #3d464f;
+}
+.social {
+  text-align: center;
+}
+.social .social-icon {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+svg:hover {
+  transition: filter 500ms;
+  -webkit-filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.99));
+}
+.main-footer .social .social-icon {
+  margin-right: 20px;
+}
+.main-footer .social .social-icon.twitter {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
