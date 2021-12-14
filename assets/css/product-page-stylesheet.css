@@ -163,7 +163,7 @@ a {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
-  width: 185px;
+  width: 215px;
   margin-bottom: 25px;
 }
 
@@ -304,10 +304,16 @@ a {
 
 #desktop-coffee-title {
   font-size: 18px;
-  padding-left: 40px;
   text-decoration: underline;
   margin-top: -212px;
-  margin-bottom: 212px;
+  margin-bottom: 180px;
+}
+
+.desc-and-buy-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -320,8 +326,15 @@ a {
     width: 625px;
   }
 
+  .desc-and-buy-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+  }
+
   /* Product description */
-  .product-1 h1 {
+  .product h1 {
     font-size: 16px;
     width: 355px;
     margin-bottom: 25px;
@@ -362,6 +375,11 @@ a {
   /*Text for add-to-cart-btn */
   .add-to-cart {
     font-size: 24px;
+  }
+
+  #desktop-coffee-title {
+    margin-top: -240px;
+    margin-bottom: 220px;
   }
 }
 
@@ -421,10 +439,10 @@ a {
   }
 
   .coffee-bag-1 {
-    width: 100px;
+    width: 120px;
     max-width: 100%;
     margin-top: 0;
-    padding-top: 0;
+    margin-top: -60px;
   }
 
   #desktop-coffee {
@@ -443,10 +461,19 @@ a {
 
   #desktop-coffee-title {
     text-decoration: underline;
+    margin: 0;
+  }
+
+  #desktop-coffee-desc {
+    display: grid;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .add-to-cart-btn {
     width: 200px;
+    margin-left: -14px;
   }
 
   .add-to-cart {
