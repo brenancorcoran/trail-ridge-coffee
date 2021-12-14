@@ -3,7 +3,7 @@ body {
 }
 .main {
   margin-bottom: 20px;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   border-top: solid #32695c 4px;
   border-bottom: solid #32695c 4px;
   background-image: url('/assets/img/desktop-hero-texture.gif');
@@ -25,17 +25,20 @@ body {
   filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.9));
 }
 .hero h1 {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-family: 'Domine', serif;
   white-space: pre-line;
   text-align: center;
-  color: #000;
-  font-weight: 800;
+  color: rgb(50, 105, 92);
+  font-weight: 700;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .hero p {
   padding: 0 70px;
 }
 .welcome {
   margin-top: 30px;
+  z-index: 999;
 }
 .hero-desk {
   display: none;
@@ -53,7 +56,7 @@ body {
     background-repeat: no-repeat;
     background-position: top -60px right;
     height: 350px;
-    opacity: 0.3;
+    opacity: 0.2;
     background-size: 400px;
   }
   .grid-container {
@@ -68,15 +71,17 @@ body {
   .welcome {
     margin-top: 125px;
     max-width: 600px;
+    background: white;
   }
   .hero h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: left;
   }
   .hero p {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.3em;
+    padding: 0;
   }
   .hero-mbl {
     display: none;
