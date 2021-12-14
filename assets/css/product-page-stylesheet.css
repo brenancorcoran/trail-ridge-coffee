@@ -298,8 +298,16 @@ a {
 }
 
 /* Hide h1 for desktop purposes */
-#desktop-coffee {
+#desktop-coffee-desc {
   display: none;
+}
+
+#desktop-coffee-title {
+  font-size: 18px;
+  padding-left: 40px;
+  text-decoration: underline;
+  margin-top: -212px;
+  margin-bottom: 212px;
 }
 
 /* MEDIA QUERIES */
