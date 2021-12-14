@@ -1,7 +1,8 @@
-body {
+.hero-body {
   margin: 0;
 }
-.main {
+
+.hero-main {
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
   border-top: solid #32695c 4px;
@@ -47,11 +48,12 @@ body {
   display: block;
 }
 
+/* Media Queries */
 @media (min-width: 992px) {
-  .main {
+  .hero-main {
     background-image: url('/assets/img/desktop-hero-texture.gif');
   }
-  .main-bg {
+  .hero-main-bg {
     background-image: url('/assets/img/tr-logo-circle-400px-rotate.png');
     background-repeat: no-repeat;
     background-position: top -60px right;
@@ -88,5 +90,21 @@ body {
   }
   .hero-desk {
     display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    padding-top: 25px;
   }
 }
