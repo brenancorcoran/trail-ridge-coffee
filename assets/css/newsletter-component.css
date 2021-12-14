@@ -1,3 +1,4 @@
+/* ======NEWSLETTER CSS===== */
 .newsletter-main {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,8 +41,8 @@
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -5%;
-  margin-bottom: -5%;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /* Email Input Box */
@@ -122,13 +123,16 @@
   }
 
   .newsletter-main h2 {
-    font-size: 30px;
-    margin-bottom: 8%;
+    font-size: 20px;
+    margin-bottom: 4%;
+    padding-right: 200px;
+    padding-left: 200px;
   }
 
   .newsletter-main h3 {
-    font-size: 85px;
-    margin-bottom: 2%;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   .newsletter {
