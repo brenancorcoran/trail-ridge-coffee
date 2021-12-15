@@ -1070,7 +1070,7 @@ svg:hover {
 }
 
 /* Arrow for product-page-btn */
-.arrow-2 {
+.pp-arrow {
   border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -1096,7 +1096,7 @@ svg:hover {
 }
 
 /* Change color of arrow for product-page-btn when hover */
-.product-page-btn:hover .arrow-2 {
+.product-page-btn:hover .pp-arrow {
   border: solid #32695c;
   border-width: 0 2px 2px 0;
   display: inline-block;
