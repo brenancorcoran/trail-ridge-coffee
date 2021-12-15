@@ -141,7 +141,7 @@ a {
   font-family: 'Roboto', sans-serif;
   border-top: solid #32695c 4px;
   border-bottom: solid #32695c 4px;
-  background-image: url('/assets/img/desktop-hero-texture.gif');
+  background-image: url('/trail-ridge-coffee/assets/img/desktop-hero-texture.gif');
 }
 .grid-container {
   display: grid;
@@ -185,10 +185,10 @@ a {
 /* Media Queries */
 @media (min-width: 992px) {
   .hero-main {
-    background-image: url('/assets/img/desktop-hero-texture.gif');
+    background-image: url('/trail-ridge-coffee/assets/img/desktop-hero-texture.gif');
   }
   .hero-main-bg {
-    background-image: url('/assets/img/tr-logo-circle-400px-rotate.png');
+    background-image: url('/trail-ridge-coffee/assets/img/tr-logo-circle-400px-rotate.png');
     background-repeat: no-repeat;
     background-position: top -60px right;
     height: 350px;
@@ -207,7 +207,6 @@ a {
   .welcome {
     margin-top: 125px;
     max-width: 600px;
-    background: white;
   }
   .hero h1 {
     font-size: 1.8em;
