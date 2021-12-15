@@ -952,7 +952,7 @@ svg:hover {
 }
 
 /* Arrow for purchase-btn */
-#arrow-2 {
+.arrow-2 {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -977,7 +977,7 @@ svg:hover {
 }
 
 /* Change color of arrow for purchase-btn when hover */
-.purchase-btn:hover #arrow-2 {
+.purchase-btn:hover .arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1048,7 +1048,7 @@ svg:hover {
 .product-page-btn {
   margin-bottom: 25px;
   background-color: #32695c;
-  width: 185px;
+  width: 225px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0 auto;
@@ -1056,7 +1056,7 @@ svg:hover {
 }
 
 /*Text for product-page-btn */
-.product-page {
+.pp-btn {
   color: white;
   font-family: Roboto;
   font-weight: bold;
@@ -1071,7 +1071,7 @@ svg:hover {
 }
 
 /* Arrow for product-page-btn */
-.arrow {
+.arrow-2 {
   border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -1083,7 +1083,7 @@ svg:hover {
 
 /* Hover animation for product-page-btn */
 .product-page-btn:hover {
-  color: white;
+  color: #32695c;
   background-color: #ffffff;
   border: 2px solid #32695c;
   padding-bottom: 8px;
@@ -1092,12 +1092,12 @@ svg:hover {
 }
 
 /* Change color of text for product-page-btn when hover */
-.product-page-btn:hover .product-page {
+.product-page-btn:hover .pp-btn {
   color: #32695c;
 }
 
 /* Change color of arrow for product-page-btn when hover */
-.product-page-btn:hover .arrow {
+.product-page-btn:hover .arrow-2 {
   border: solid #32695c;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -1164,7 +1164,7 @@ svg:hover {
 }
 
 /* Arrow for checkout-btn */
-#arrow-2 {
+.arrow-2 {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1190,7 +1190,7 @@ svg:hover {
 }
 
 /* Change color of arrow for checkout-btn when hover */
-.checkout-btn:hover #arrow-2 {
+.checkout-btn:hover .arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1231,7 +1231,7 @@ svg:hover {
     font-size: 24px;
     grid-row: 1;
   }
-  .product-page {
+  .pp-btn {
     font-size: 24px;
   }
   .product-page-btn {
@@ -1404,7 +1404,7 @@ svg:hover {
 }
 
 /* Arrow for buy-now-btn */
-#arrow {
+.arrow {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1499,7 +1499,7 @@ svg:hover {
 }
 
 /* Arrow for add-to-cart-btn */
-#arrow-2 {
+.arrow-2 {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1524,7 +1524,7 @@ svg:hover {
 }
 
 /* Change color of arrow for add-to-cart-btn when hover */
-.add-to-cart-btn:hover #arrow-2 {
+.add-to-cart-btn:hover .arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1581,7 +1581,7 @@ svg:hover {
   }
 
   /* Arrow for buy-now-btn */
-  #arrow {
+  .arrow {
     border: solid white;
     border-width: 0 5px 5px 0;
     display: inline-block;
