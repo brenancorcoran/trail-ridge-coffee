@@ -668,7 +668,7 @@ svg:hover {
   color: #32695c;
 }
 /* Arrow for taste-diff-btn */
-.arrow {
+.taste-arrow {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -678,7 +678,7 @@ svg:hover {
 }
 
 /* Change color of arrow for taste-diff-btn when hover */
-.taste-diff-btn:hover .arrow {
+.taste-diff-btn:hover .taste-arrow {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -865,7 +865,7 @@ svg:hover {
 }
 
 /* Arrow for sign-up-btn */
-.arrow {
+.sign-up-arrow {
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -890,7 +890,7 @@ svg:hover {
 }
 
 /* Change color of arrow for sign-up-btn when hover */
-.sign-up-btn:hover .arrow {
+.sign-up-btn:hover .sign-up-arrow {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
