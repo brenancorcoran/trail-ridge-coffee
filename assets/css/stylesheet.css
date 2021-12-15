@@ -325,7 +325,7 @@ a {
 }
 
 /* Arrow for buy-now-btn */
-#arrow {
+.arrow{
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -350,7 +350,7 @@ a {
 }
 
 /* Change color of arrow for buy-now-btn when hover */
-.buy-now-btn:hover #arrow {
+.buy-now-btn:hover .arrow{
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -484,7 +484,7 @@ a {
 }
 
 /* Arrow for sign-up-btn */
-#arrow {
+.arrow{
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -509,7 +509,7 @@ a {
 }
 
 /* Change color of arrow for sign-up-btn when hover */
-.sign-up-btn:hover #arrow {
+.sign-up-btn:hover .arrow{
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -668,7 +668,7 @@ svg:hover {
   color: #32695c;
 }
 /* Arrow for taste-diff-btn */
-#arrow {
+.arrow{
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -678,7 +678,7 @@ svg:hover {
 }
 
 /* Change color of arrow for taste-diff-btn when hover */
-.taste-diff-btn:hover #arrow {
+.taste-diff-btn:hover .arrow{
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -865,7 +865,7 @@ svg:hover {
 }
 
 /* Arrow for sign-up-btn */
-#arrow {
+.arrow{
   border: solid white;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -890,7 +890,7 @@ svg:hover {
 }
 
 /* Change color of arrow for sign-up-btn when hover */
-.sign-up-btn:hover #arrow {
+.sign-up-btn:hover .arrow{
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1070,7 +1070,7 @@ svg:hover {
 }
 
 /* Arrow for product-page-btn */
-#arrow {
+.arrow{
   border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -1096,7 +1096,7 @@ svg:hover {
 }
 
 /* Change color of arrow for product-page-btn when hover */
-.product-page-btn:hover #arrow {
+.product-page-btn:hover .arrow{
   border: solid #32695c;
   border-width: 0 2px 2px 0;
   display: inline-block;
