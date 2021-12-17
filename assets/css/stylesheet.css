@@ -275,8 +275,9 @@ a {
 .product h1 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 18px;
-  text-decoration: underline;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 8px;
   padding-top: 5px;
 }
 
@@ -363,9 +364,8 @@ a {
     text-align: center;
     font-family: Roboto;
     font-weight: bold;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    font-size: 24px;
+    text-decoration: underline;
     color: #32695c;
     margin-bottom: -35px;
   }
@@ -389,9 +389,7 @@ a {
 
   .product-home h1 {
     grid-column: 2;
-    text-align: left;
-    margin-left: 50px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .product-home .product h2 {
