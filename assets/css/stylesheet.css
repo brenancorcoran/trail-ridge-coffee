@@ -1395,7 +1395,7 @@ svg:hover {
 .product-1 h1 {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
   width: 215px;
   margin-bottom: 25px;
@@ -1611,7 +1611,6 @@ svg:hover {
   }
 
   .desktop-coffee-title {
-    margin-top: -240px;
     margin-bottom: 220px;
   }
 }
