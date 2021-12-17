@@ -1396,7 +1396,7 @@ svg:hover {
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   width: 215px;
   margin-bottom: 25px;
 }
@@ -1645,6 +1645,10 @@ svg:hover {
     grid-row: 2;
   }
 
+  .product-1 h2 {
+  display: none;
+}
+
   /* dropdown menu with products */
   .dropdown {
   }
@@ -1671,6 +1675,7 @@ svg:hover {
   .products h1 {
     display: none;
     font-weight: none;
+    text-align: left;
   }
 
   .desc-and-buy-wrapper {
@@ -1693,7 +1698,7 @@ svg:hover {
 
   .desktop-coffee h1 {
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .desktop-coffee h2:nth-child(2) {
