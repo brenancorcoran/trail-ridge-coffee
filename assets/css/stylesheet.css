@@ -1395,6 +1395,7 @@ svg:hover {
 .product-1 h1 {
   font-family: Roboto;
   font-weight: bold;
+  font-size: 14px;
   text-align: center;
   width: 215px;
   margin-bottom: 10px;
