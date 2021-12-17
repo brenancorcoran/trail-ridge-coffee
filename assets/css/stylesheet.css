@@ -1401,6 +1401,15 @@ svg:hover {
   margin-bottom: 25px;
 }
 
+.product-1 h2 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  width: 215px;
+  margin-bottom: 25px;
+}
+
 /* Arrow for buy-now-btn */
 .arrow {
   border: solid white;
@@ -1534,6 +1543,7 @@ svg:hover {
 /* Hide h1 for desktop purposes */
 .desktop-coffee-desc {
   display: none;
+  font-size: 14px;
 }
 
 .desktop-coffee-title {
@@ -1686,7 +1696,7 @@ svg:hover {
     font-size: 18px;
   }
 
-  .desktop-coffee h1:nth-child(2) {
+  .desktop-coffee h2:nth-child(2) {
     font-weight: normal;
     font-size: 14px;
   }
