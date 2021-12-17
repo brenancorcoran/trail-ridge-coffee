@@ -1392,7 +1392,17 @@ svg:hover {
 }
 
 /* Product description */
-.product-1 h1 {
+.product-1 .desktop-coffee-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  width: 215px;
+  margin-bottom: 10px;
+}
+
+/* Product description */
+.product-1 .desktop-coffee-desc {
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
