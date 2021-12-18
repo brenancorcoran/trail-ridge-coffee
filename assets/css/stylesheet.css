@@ -1419,7 +1419,7 @@ svg:hover {
 }
 
 /* Add to Cart Button */
-.add-to-cart-btn {
+.add-cart-btn {
   margin-top: 20px;
   margin-bottom: 25px;
   background-color: #32695c;
@@ -1429,8 +1429,8 @@ svg:hover {
   text-align: center;
 }
 
-/*Text for add-to-cart-btn */
-.add-to-cart {
+/*Text for add-cart-btn */
+.add-cart {
   color: white;
   font-family: Roboto;
   font-weight: bold;
@@ -1444,7 +1444,7 @@ svg:hover {
   text-decoration: none;
 }
 
-/* Arrow for add-to-cart-btn */
+/* Arrow for add-cart-btn */
 .arrow-2 {
   border: solid white;
   border-width: 0 5px 5px 0;
@@ -1454,8 +1454,8 @@ svg:hover {
   -webkit-transform: rotate(-45deg);
 }
 
-/* Hover animation for add-to-cart-btn */
-.add-to-cart-btn:hover {
+/* Hover animation for add-cart-btn */
+.add-cart-btn:hover {
   color: white;
   background-color: #ffffff;
   border: 2px solid #32695c;
@@ -1464,13 +1464,13 @@ svg:hover {
   text-decoration: none;
 }
 
-/* Change color of text for add-to-cart-btn when hover */
-.add-to-cart-btn:hover .add-to-cart {
+/* Change color of text for add-cart-btn when hover */
+.add-cart-btn:hover .add-cart {
   color: #32695c;
 }
 
-/* Change color of arrow for add-to-cart-btn when hover */
-.add-to-cart-btn:hover .arrow-2 {
+/* Change color of arrow for add-cart-btn when hover */
+.add-cart-btn:hover .arrow-2 {
   border: solid #32695c;
   border-width: 0 5px 5px 0;
   display: inline-block;
@@ -1577,7 +1577,7 @@ svg:hover {
     text-align: left;
   }
 
-  .add-to-cart-btn {
+  .add-cart-btn {
     margin-left: -110px;
   }
 }
